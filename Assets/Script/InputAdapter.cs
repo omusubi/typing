@@ -28,7 +28,16 @@ public class InputAdapter : MonoBehaviour {
             sentence.text = sentence.text.Substring(1, sentence.text.Length - 1);
             if (sentence.text == "") {
                 sentence.text = sMaker.getSentence();
+                if (sentence.text == "") {
+                    debugMessage.text = "Clear!!";
+                }
                 sentenceback.text = sentence.text;
+            }
+        }
+        else
+        {
+            if (key.getKeyDown() != "") { 
+                debugMessage.text = "NG";
             }
         }
 	}

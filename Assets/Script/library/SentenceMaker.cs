@@ -14,7 +14,7 @@ namespace Library
             num++;
             switch (num)
             {
-                case 1: return "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                case 1: return "ABCDE";
                 case 2: return "HOGE";
                 case 3: return "TEST";
                 case 4: return "AAAA";
